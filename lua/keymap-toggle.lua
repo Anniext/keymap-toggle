@@ -5,7 +5,7 @@ function M.switch()
 end
 
 function M.setup()
-  vim.cmd('command! AutoToggle :lua require(\'plugins.auto_toggle\').switch()')
+  vim.cmd('command! AutoToggle :lua require(\'keymap-toggle\').switch()')
 end
 vim.cmd('autocmd FileType cpp inoremap // <Esc>:AutoToggle<CR>i//')
 return M
